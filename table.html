@@ -2,6 +2,27 @@
 <html>
 <head>
 <style>
+  table {
+  width:100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+#t01 th {
+  background-color: black;
+  color: white;
+}
 table, th, td {
   border: 1px solid black;
   padding: 5px;
@@ -15,7 +36,10 @@ table {
 
 <h2>Border Spacing</h2>
 <p>Border spacing specifies the space between the cells.</p>
+ 
+<br>
 
+<table id="t01">
 <table style="width:100%">
   <tr>
     <th>Firstname</th>
@@ -51,7 +75,7 @@ table {
     <td>55577854</td>
     <td>55577855</td>
   </tr>
-  
+
 </table>
 <h2>Cell that spans two rows</h2>
 
