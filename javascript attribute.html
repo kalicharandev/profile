@@ -6,22 +6,22 @@
 <p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
 
 <script>
-function light(sw) {
+function run(sw) {
   var pic;
   if (sw == 0) {
-    pic = "pic_bulboff.gif"
+    pic = "https://lh3.googleusercontent.com/proxy/2NzUfKuMu38FWoaALC55fapHiF7tOmg1czvqmS0A_PhX9JUKw431VuUEdba3SRauiT6o6vZDSS1BUgfUf6zLBp_YULKbcVM"
   } else {
-    pic = "pic_bulbon.gif"
+    pic = "https://i.gifer.com/SxLR.gif"
   }
   document.getElementById('myImage').src = pic;
 }
 </script>
 
-<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+<img id="myImage" src="https://lh3.googleusercontent.com/proxy/2NzUfKuMu38FWoaALC55fapHiF7tOmg1czvqmS0A_PhX9JUKw431VuUEdba3SRauiT6o6vZDSS1BUgfUf6zLBp_YULKbcVM" width="100" height="180">
 
 <p>
-<button type="button" onclick="light(1)">Light On</button>
-<button type="button" onclick="light(0)">Light Off</button>
+<button type="button" onclick="run(1)">run</button>
+<button type="button" onclick="run(0)">walk</button>
 </p>
 
 </body>
